@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: age-calculator
-        # Use your Docker Hub image; update the username if needed.
         image: devopsproject774/age-calculator:latest
         imagePullPolicy: Always
         ports:
@@ -28,7 +27,7 @@ spec:
   selector:
     app: age-calculator
   ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 3000
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000
   type: LoadBalancer
