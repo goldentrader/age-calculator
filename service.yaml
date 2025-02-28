@@ -6,8 +6,7 @@ spec:
   selector:
     app: age-calculator
   ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 80
+  - protocol: TCP
+    port: 3000
+    targetPort: 80
   type: LoadBalancer
-  loadBalancerIP: 52.142.40.92
