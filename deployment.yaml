@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
       - name: age-calculator
-        image: age-calculator:latest
+        # Use your Docker Hub image; update the username if needed.
+        image: devopsproject774/age-calculator:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
 ---
